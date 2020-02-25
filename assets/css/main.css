@@ -1,12 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
-/*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -62,7 +56,7 @@
 		width: device-width;
 	}
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 780px) {
 
 		html, body {
 			min-width: 320px;
@@ -92,7 +86,7 @@
 /* Type */
 
 	html {
-		font-size: 16pt;
+		font-size: 14pt;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -103,7 +97,7 @@
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 1036px) {
 
 			html {
 				font-size: 11pt;
@@ -111,7 +105,7 @@
 
 		}
 
-		@media screen and (max-width: 360px) {
+		@media screen and (max-width: 660px) {
 
 			html {
 				font-size: 10pt;
@@ -121,7 +115,7 @@
 
 	body, input, select, textarea {
 		color: #ffffff;
-		font-family: "Source Sans Pro", sans-serif;
+		font-family: "Arial", sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;
@@ -210,7 +204,7 @@
 		font-size: 0.6rem;
 	}
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 1036px) {
 
 		h1 {
 			font-size: 1.75rem;
@@ -308,7 +302,7 @@
 			margin: 1.875rem 0 0 0 !important;
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 1036px) {
 
 			form .field {
 				margin: 0 0 1.125rem 0;
@@ -328,7 +322,7 @@
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 780px) {
 
 			form .field.half {
 				width: 100%;
@@ -1177,7 +1171,7 @@
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 1036px) {
 
 			#wrapper {
 				padding: 2rem 1rem;
@@ -1185,7 +1179,7 @@
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 780px) {
 
 			#wrapper {
 				padding: 1rem;
@@ -1379,7 +1373,7 @@
 				opacity: 0;
 			}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 1280px) {
 
 			#header .content p br {
 				display: none;
@@ -1387,7 +1381,7 @@
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 1036px) {
 
 			#header > * {
 				margin-top: 2rem;
@@ -1418,7 +1412,7 @@
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 780px) {
 
 			#header {
 				padding: 1.5rem 0;
@@ -1570,7 +1564,7 @@
 					background-color: rgba(255, 255, 255, 0.175);
 				}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 1036px) {
 
 			#main article {
 				padding: 3.5rem 2rem 0.5rem 2rem ;
@@ -1586,7 +1580,7 @@
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 780px) {
 
 			#main article {
 				padding: 3rem 1.5rem 0.5rem 1.5rem ;
