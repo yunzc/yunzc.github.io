@@ -21,6 +21,4 @@ function run(post, target) {
 }
 
 run("assets/posts/about.md", "about")
-run("assets/posts/publications.md", "publications")
-run("assets/posts/projects.md", "projects")
-run("assets/posts/journal.md", "journal")
+run("assets/posts/kimera_2019.md", "kimera_2019")
