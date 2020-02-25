@@ -429,7 +429,7 @@
 			right: 0;
 			text-align: center;
 			top: 0;
-			width: 3.75rem;
+			width: 2.75rem;
 		}
 
 		.select-wrapper select::-ms-expand {
@@ -1594,15 +1594,15 @@
 
 		}
 
-/* Presentations */
+/* Publications */
 
-	#presentations a:hover {
+	#publications a:hover {
 		color: red;
 	}
 	
-/* Labs */
+/* Updates */
 
-	#labs a:hover {
+	#updates a:hover {
 		color: red;
 	}
 
