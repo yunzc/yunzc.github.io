@@ -56,10 +56,10 @@
 		width: device-width;
 	}
 
-	@media screen and (max-width: 1080px) {
+	@media screen and (max-width: 480px) {
 
 		html, body {
-			min-width: 620px;
+			min-width: 320px;
 		}
 
 	}
@@ -97,7 +97,7 @@
 
 		}
 
-		@media screen and (max-width: 1036px) {
+		@media screen and (max-width: 736px) {
 
 			html {
 				font-size: 11pt;
@@ -105,7 +105,7 @@
 
 		}
 
-		@media screen and (max-width: 660px) {
+		@media screen and (max-width: 360px) {
 
 			html {
 				font-size: 10pt;
@@ -204,7 +204,7 @@
 		font-size: 0.6rem;
 	}
 
-	@media screen and (max-width: 1036px) {
+	@media screen and (max-width: 736px) {
 
 		h1 {
 			font-size: 1.75rem;
@@ -302,7 +302,7 @@
 			margin: 1.875rem 0 0 0 !important;
 		}
 
-		@media screen and (max-width: 1036px) {
+		@media screen and (max-width: 736px) {
 
 			form .field {
 				margin: 0 0 1.125rem 0;
@@ -322,7 +322,7 @@
 
 		}
 
-		@media screen and (max-width: 780px) {
+		@media screen and (max-width: 480px) {
 
 			form .field.half {
 				width: 100%;
@@ -1373,7 +1373,7 @@
 				opacity: 0;
 			}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 980px) {
 
 			#header .content p br {
 				display: none;
@@ -1381,7 +1381,7 @@
 
 		}
 
-		@media screen and (max-width: 1036px) {
+		@media screen and (max-width: 736px) {
 
 			#header > * {
 				margin-top: 2rem;
@@ -1564,7 +1564,7 @@
 					background-color: rgba(255, 255, 255, 0.175);
 				}
 
-		@media screen and (max-width: 1036px) {
+		@media screen and (max-width: 736px) {
 
 			#main article {
 				padding: 3.5rem 2rem 0.5rem 2rem ;
@@ -1580,7 +1580,7 @@
 
 		}
 
-		@media screen and (max-width: 780px) {
+		@media screen and (max-width: 480px) {
 
 			#main article {
 				padding: 3rem 1.5rem 0.5rem 1.5rem ;
