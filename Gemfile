@@ -16,8 +16,6 @@ gem "github-pages", group: :jekyll_plugins
 
 # gem "jekyll"
 
-gem "wdm", "~> 0.1.0" if Gem.win_platform?
-
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   # gem "jekyll-archives"
@@ -29,3 +27,8 @@ group :jekyll_plugins do
   gem 'jekyll-seo-tag'
   gem 'hawkins'
 end
+
+# Jekyll SEO tags plugins
+gem 'jekyll-seo-tag'
+#gem 'amp-jekyll'
+# gem 'jekyll-paginate'

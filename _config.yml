@@ -171,17 +171,6 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
-# Collections
-collections:
-  publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-
-
 # Defaults
 defaults:
   # _posts
@@ -233,18 +222,6 @@ permalink: /:categories/:title/
 # paginate_path: /page:num/
 timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-scholar:
-  style: apa
-  locale: en
-  sort_by: year, month
-  order: descending
-  source: /_publications/
-  bibliography: papers.bib
-  bibliography_template: bib
-  replace_strings: true
-  join_strings: false
-  query: "@*"
-
 # Plugins
 plugins:
   - jekyll-paginate
@@ -259,8 +236,26 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jekyll-scholar
   - jemoji
 
+# Collections
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
+# Scholar
+scholar:
+  style: apa
+  locale: en
+  sort_by: year, month
+  order: descending
+  source: /_publications/
+  bibliography: papers.bib
+  replace_strings: true
+  join_strings: false
+  query: "@*"
 
 # Archives
 #  Type
