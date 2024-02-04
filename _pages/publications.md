@@ -5,12 +5,8 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
-
-{% include base_path %}
-
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
+{% assign curr_year = site.time | date: '%Y' %}
+{% for y in (2020..curr_year) reversed %}
+  <h3 class="year">{{y}}</h3>
+  {% bibliography -q @*[year={{y}}]* %}
 {% endfor %}
