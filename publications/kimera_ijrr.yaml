@@ -1,0 +1,7 @@
+- title: "Kimera: From SLAM to spatial perception with 3D dynamic scene graphs"
+  date: "2021-12-01"
+  authors: "Antoni Rosinol, Andrew Violette, Marcus Abate, Nathan Hughes, Yun Chang, Jingnan Shi, Arjun Gupta, Luca Carlone"
+  venue: The International Journal of Robotics Research
+  figure: kimera_ijrr.png
+  paper: https://arxiv.org/pdf/2101.06894
+  code: https://github.com/MIT-SPARK/Kimera

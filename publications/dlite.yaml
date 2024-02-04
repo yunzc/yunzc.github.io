@@ -1,0 +1,6 @@
+- title: "D-lite: Navigation-oriented compression of 3d scene graphs under communication constraints"
+  date: "2023-09-27"
+  authors: "Yun Chang, Luca Ballotta, Luca Carlone"
+  venue: IEEE Robotics and Automation Letters
+  figure: dlite.png
+  paper: https://arxiv.org/pdf/2209.06111

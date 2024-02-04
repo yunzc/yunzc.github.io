@@ -1,0 +1,7 @@
+- title: "Resilient and distributed multi-robot visual slam: Datasets, experiments, and lessons learned"
+  date: "2023-10-01"
+  authors: "Yulun Tian*, Yun Chang*, Long Quang, Arthur Schang, Carlos Nieto-Granda, Jonathan P How, Luca Carlone"
+  venue: 2023 IEEE/RSJ International Conference on Intelligent Robots and Systems
+  figure: kimera_multi_iros.png
+  paper: https://arxiv.org/pdf/2304.04362
+  code: https://github.com/MIT-SPARK/Kimera-Multi

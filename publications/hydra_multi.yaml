@@ -1,0 +1,6 @@
+- title: "Hydra-multi: Collaborative online construction of 3d scene graphs with multi-robot teams"
+  date: "2023-10-01"
+  authors: "Yun Chang, Nathan Hughes, Aaron Ray, Luca Carlone"
+  venue: 2023 IEEE/RSJ International Conference on Intelligent Robots and Systems
+  figure: hydra_multi.png
+  paper: https://arxiv.org/pdf/2304.13487

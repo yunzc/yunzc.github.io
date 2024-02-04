@@ -1,0 +1,6 @@
+- title: "Loop closure prioritization for efficient and scalable multi-robot SLAM"
+  date: "2022-07-15"
+  authors: "Christopher E Denniston*, Yun Chang*, Andrzej Reinke, Kamak Ebadi, Gaurav S Sukhatme, Luca Carlone, Benjamin Morrell, Ali-akbar Agha-mohammadi"
+  venue: IEEE Robotics and Automation Letters
+  figure: loop_closure.png
+  paper: https://arxiv.org/pdf/2205.12402

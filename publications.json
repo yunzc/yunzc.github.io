@@ -1,0 +1,21 @@
+[
+  "clio.yaml",
+  "kimera2.yaml",
+  "lamp.yaml",
+  "dlite.yaml",
+  "kimera_ijrr.yaml",
+  "locus.yaml",
+  "door_slam.yaml",
+  "kimera_multi_icra.yaml",
+  "loop_closure.yaml",
+  "hydra_ijrr.yaml",
+  "kimera_multi_iros.yaml",
+  "nebula.yaml",
+  "hydra_multi.yaml",
+  "kimera_multi_tro.yaml",
+  "subt_survey.yaml",
+  "hydra.yaml",
+  "kimera.yaml",
+  "khronos.yaml",
+  "lamp2.yaml"
+] 

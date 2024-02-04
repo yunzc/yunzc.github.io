@@ -1,0 +1,7 @@
+- title: "Locus 2.0: Robust and computationally efficient lidar odometry for real-time 3d mapping"
+  date: "2022-06-10"
+  authors: "Andrzej Reinke, Matteo Palieri, Benjamin Morrell, Yun Chang, Kamak Ebadi, Luca Carlone, Ali-Akbar Agha-Mohammadi"
+  venue: IEEE Robotics and Automation Letters
+  figure: locus.png
+  paper: https://arxiv.org/pdf/2205.11784
+  code: https://github.com/NeBula-Autonomy/LOCUS

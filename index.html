@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Yun Chang</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Robotics PhD student at MIT.">
+    <meta name="keywords" content="Yun Chang,Robotics,Computer Vision,SLAM,Spatial AI,Multi-Robot Systems,Field Robotics">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <link rel="shortcut icon" href="static/img/favicon.ico">
+
+    <style type="text/css">
+/* Color Scheme: Blue / Summer */
+:root {
+    --background-color: #e5e9ed; /* Light greyish blue for the background */
+    --highlight-color: #4a708b; /* Muted blue for highlights */
+    --main-color: #2f4f6f; /* Deep greyish blue for main elements */
+    --link-color: #5a7a8d; /* Soft blue for links */
+    --link-color-hover: #3a4a5f; /* Darker blue-grey for hovered links */
+    --secondary-link-color: #7c8c9a; /* Neutral greyish blue for secondary links */
+    --secondary-link-border-color: #a0b0c0; /* Light grey-blue for borders */
+    --secondary-content-background-color: #f2f4f7; /* Very light grey for content backgrounds */
+    --link-button-background-color: #dbe3e9; /* Muted blue-grey for buttons */
+}
+
+body{margin:0;padding:0;}
+a{color:var(--link-color)}
+a:hover{color:var(--link-color-hover);cursor:pointer}
+#background{position:fixed;top:0;overflow:hidden;height:0}
+#wave-canvas{display:block;position:relative;top:0;left:5%;width:55%;min-width:850px;height:150px;border:0}
+
+/* Container for the slideshow background */
+#background-slideshow {
+    position: relative;
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+/* Slideshow images as the background */
+#background-slideshow:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data/images/gallery/huskies_lake.jpg') no-repeat center center;
+    background-size: cover;
+    animation: slideshow 50s infinite;
+    z-index: 1;
+}
+
+/* Slideshow animation */
+@keyframes slideshow {
+    0% {
+        background-image: url('data/images/gallery/huskies_lake.jpg');
+    }
+    20% {
+        background-image: url('data/images/gallery/jackal_forest.jpg');
+    }
+    40% {
+        background-image: url('data/images/gallery/kentucky_team.jpg');
+    }
+    60% {
+        background-image: url('data/images/gallery/spots_tunnel.jpg');
+    }
+    80% {
+        background-image: url('data/images/gallery/wp_kimera_multi.jpg');
+    }
+    100% {
+        background-image: url('data/images/gallery/huskies_lake.jpg');
+    }
+}
+
+#main{
+    position: relative;
+    z-index: 2;
+    margin:0 auto 15px;
+    padding:45px 30px 15px 15px;
+    width:80%;
+    min-width:240px;
+    text-align:center;
+    background-color:var(--background-color);
+    opacity: 0.9;
+}
+
+.profile-pendant {display:none;bottom:-15px;right:-200px;position:absolute}
+@media (min-width: 768px) { .profile-pendant {display:block} }
+@media (max-width: 767px) { .profile-pendant {display:none} }
+
+.main-content{position:relative;z-index:3;padding:20px;text-align:center;cursor:default;text-align:center;background-color:var(--background-color);opacity: 0.9;top: 10%;
+}
+
+/*.main-content{background:rgba(238,238,238,0.95);padding:0;text-align:center;cursor:default;text-align:center;}*/
+/*.main-content{margin-left:6.5104167%;width:86.9791667%;}*/
+@media (min-width: 768px) {.main-content{width:66%;min-width:668px;margin:auto;}}
+@media (min-width: 1200px) {.main-content{width:66%;max-width:1080px;margin:auto;}}
+
+/* Avatar, Name, etc. */
+#main-content-container{margin-top:0 auto;padding:15px 0 0;max-width:1080px;}
+@media (min-width: 768px) { #main-content-container{padding:15px 0 0;} }
+#main-content-container .col-avatar{text-align:center;min-width:330px;}
+@media (min-width: 768px) { #main-content-container .col-avatar{text-align:center} }
+#main-content-container .col-avatar .avatar{z-index:100;width:200px;height:200px;border-radius:100%;box-shadow:0 0 0 0.1em #eee;opacity:1;}
+@media (min-width: 1200px) { #main-content-container .col-avatar .avatar{margin-bottom:10px;} }
+
+#main-content-container .col-info{height:100%;align-items:center;}
+#main-info-container{padding-top:15px;}
+#main-info-container .col-name{text-align:center;margin-top:30px;}
+@media (min-width: 768px) { #main-info-container .col-name{text-align:left;margin-top:0;}
+}
+#main-info-container .col-name .text{text-align:left;margin-top:0.5rem}
+#main-info-container .col-name .name{margin:0;color:var(--main-color);font-size:1.85em;font-family:"Source Sans Pro",Helvetica,sans-serif}
+#main-info-container .col-name .email{color:#666; font-size:14px}
+#main-info-container .col-link{text-align:center;margin:-5px 0 -25px;}
+#main-info-container .col-link ul {margin:0px auto auto;padding:0;list-style:none;text-align:center}
+#main-info-container .col-link li {display:inline-block;margin:auto;padding:0 10px;color:#ccc;line-height:10px}
+#main-info-container .col-link li a{width:45px;height:45px;color:#ccc;padding:0;font-size:45px;line-height:45px}
+#main-info-container .col-link li a:focus,
+#main-info-container .col-link li a:hover{text-decoration:none;cursor:hand}
+#main-info-container .col-link li a.border{border:1px solid #ccc;border-radius:100%;}
+#main-info-container .col-link li a.padding{padding:0px 0px;font-size:22px}
+
+/* Other */
+.content-container{width:100%;padding:0 30px}
+.main-news-container{margin:auto;padding: 0 0em;max-width:1080px;text-align:left;padding-top:30px;max-width:1080px;font-size:1rem;line-height:1.4}
+@media (min-width: 1200px) { .main-news-container{padding-top:20px;} }
+.main-news-container .subtitle{margin-top:0px;color:var(--main-color)}
+.main-news-container .news-list{margin-bottom:0rem}
+
+section.overview ul,section.overview li,section.overview h3,section.overview h1,section.overview p{margin:0;padding:0}
+section.overview h1{font-weight:700}
+section.overview li{font-weight:400;list-style:none}
+.join,.up::after,.down::before{background-position:50% 50%}
+.up::after,.down::before{background-repeat:no-repeat;content:"";display:block;height:20px}
+.up::after{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3IiBoZWlnaHQ9IjQiIHZpZXdCb3g9IjAgMCA3IDQiPjxwYXRoIGZpbGw9IiM1NjZjN2YiIGQ9Ik0xIDRWM2gxVjJoM3YxaDF2MWgxVjJINlYxSDVWMEgydjFIMXYxSDB2MiIvPjwvc3ZnPg==)}
+.down::before{background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI3cHgiIGhlaWdodD0iNHB4IiB2aWV3Qm94PSIwIDAgNyA0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA3IDQiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIGZpbGw9IiM1NjZjN2YiIHBvaW50cz0iNiwwIDYsMSA1LDEgNSwyIDIsMiAyLDEgMSwxIDEsMCAwLDAgMCwyIDEsMiAxLDMgMiwzIDIsNCA1LDQgNSwzIDYsMyA2LDIgNywyIDcsMCAiLz48L3N2Zz4=)}
+.join{background-repeat:repeat-y;background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxcHgiIGhlaWdodD0iMXB4IiB2aWV3Qm94PSIwIDAgMSAxIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxIDEiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGZpbGw9IiM1NjZjN2YiIGQ9Ik0wLDBoMXYxSDBWMHoiLz48L3N2Zz4=)}
+.thin,.thick{background:#ffffff}
+.thin{border:1px solid var(--secondary-link-border-color);padding:.5em}
+.main{text-align:center}
+.main ul{display:block;width:150px;margin:1em auto 0}
+ul.row{width:100%;display:flex;align-items:flex-start}
+ul.row li.page{flex:1;margin:0 .5em;min-width:280px}
+ul.row li.page.stretch{align-self:stretch}
+ul.row li.page:first-child{margin-left:0}
+ul.row li.page:last-child{margin-right:0}
+ul.row li.page h3 + ul.content{margin-top:1.5em}
+ul.row li.page ul.content li{border-top:1px solid var(--secondary-link-border-color);padding:2px 5px}
+ul.row li.page ul.content li.level-2{padding:2px 12px}
+ul.row li.page ul.content li ul.section li{border-top:none;padding:0}
+ul.row li.page ul.content li ul.section li:before{content:"― "}
+section.overview{background:var(--secondary-content-background-color);transition:max-width 400ms ease-in-out;padding:20px;margin:auto;z-index:99}
+section.overview .thin h3{will-change:auto;transition:transform 400ms ease-in-out;transform-origin:0 50%}
+section.overview .thin b{display:block;padding:2px 5px}
+section.overview .thin ul.content{transition:opacity 200ms ease;opacity:1}
+@media (max-width: 1480px) { ul.row li.page{margin:0} }
+
+.toggle-overview {background:var(--background-color);display:block;text-align:center;padding:5px;color:var(--main-color);font-weight:500}
+.toggle-overview:hover {text-decoration:none}
+/* @media (max-width: 560px) {section.overview {display:none}} */
+.thick{border:3px solid var(--secondary-link-border-color);padding:.5em;font-size:1.25rem}
+.thick>b{color:var(--main-color)}
+.thick>p{font-size: 1rem}
+.thick>p>a, .think>p>a:hover {background:var(--link-button-background-color);display:block;text-align:center;padding:5px;color:var(--main-color);font-weight:500;text-decoration:none}
+
+#publications {
+  margin: auto;
+  padding: 0 0em;
+  max-width: 1080px;
+  text-align: left;
+  padding-top: 30px;
+  max-width: 1080px;
+}
+
+#publications .subtitle {
+  color: var(--main-color);
+}
+
+#publications .subtitle a {
+  font-size: 18px;
+  color: var(--secondary-link-color);
+  font-weight: 400;
+}
+
+#publications .subtitle a.activated {
+  color: #333333;
+  font-weight: 600;
+}
+
+#publications .subtitle a.activated:focus,
+#publications .subtitle a.activated:hover {
+  text-decoration: none;
+  cursor: initial;
+}
+
+#publications .subtitle-aux {
+  font-size: 1rem;
+}
+
+#publications .subtitle-aux a.activated {
+  color: #333333;
+}
+
+#publications .subtitle-aux a.activated:focus,
+#publications .subtitle-aux a.activated:hover {
+  text-decoration: none;
+  cursor: initial;
+}
+
+#publications .subtitle-aux .note {
+  margin-left: 1em;
+  color: #999999;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#pub-entry-container {}
+
+#pub-entry-container > h5 {
+  margin-bottom: 5px 0;
+}
+
+#pub-entry-container .pub-entry {
+  width: 100%;
+  padding-bottom: 15px;
+  font-size: 1rem;
+}
+
+#pub-entry-container .pub-entry .col-l {
+  text-align: center;
+  padding-top: 10px;
+}
+
+#pub-entry-container .pub-entry .col-r {
+  padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+  #pub-entry-container .pub-entry .col-l {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+
+  #pub-entry-container .pub-entry .col-r {
+    flex: 0 0 55%;
+    max-width: 55%;
+  }
+}
+
+#pub-entry-container .pub-entry img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#pub-entry-container .pub-entry-body {
+  width: 100%;
+  background: transparent;
+  padding-left: 0px;
+}
+
+#pub-entry-container .pub-entry .title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+#pub-entry-container .pub-entry .authors {
+  font-weight: 400;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+#pub-entry-container .pub-entry .venue {
+  color: grey;
+  font-weight: 600;
+  font-style: italic;
+}
+
+#pub-entry-container .pub-entry .award {
+  color: red;
+  font-weight: bold;
+}
+
+#pub-entry-container .pub-entry .note {
+  display: block;
+  color: #999999;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#pub-entry-container .pub-entry .info {
+  margin-bottom: 0;
+}
+
+#pub-entry-container .row {
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+#pub-entry-container .col-l,
+#pub-entry-container .col-r {
+  vertical-align: top;
+  display: inline-block;
+  margin: 0;
+  padding-left: 0px;
+}
+
+/*scrolling*/
+.scroll-down {
+  position: absolute;
+  bottom: 20px; /* Position it near the bottom of the content */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px; /* Adjust the size of the arrow */
+  color: rgba(0, 0, 0, 0.6); /* Semi-transparent color */
+  cursor: pointer;
+  animation: bounce 1.5s infinite; /* Add bounce animation */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px); /* Adjust bounce height */
+  }
+}
+
+/* #footer{padding:0 0 1.5em;margin-top:2rem;min-width:240px;background:#fff;font-size:14px;line-height:12px;text-align:left;background:#fef8f3} */
+#footer{padding:0 0 0.5em;margin-top:2rem;min-width:240px;background:#fff;font-size:14px;line-height:12px;text-align:left;}
+#footer{background:url(static/img/background/presidential_cropped.jpg); background-size: cover; background-position: center; background-repeat: no-repeat; height: 10vh; width: 100%;}
+#footer .container{max-width:540px;padding:0 45px;position:relative}
+#footer .row{align-items:center}
+#footer .comic{padding-right:15px;padding-top:15px;}
+#footer .copyright{flex-grow:1;margin:25px auto 5px;text-align:center;display:block;font-size:1rem;line-height:2.5;color:var(--main-color)}
+#footer .stat{width:60px;height:60px;overflow:hidden;margin:0 auto 5px;padding 0;}
+@media (min-width: 420px){ #footer .stat{display:block;width:60px;height:60px;overflow:hidden;margin:5px auto -25px;padding-right:15px;} }
+#footer a{color:#666666}
+#footer a:hover{color:#333333}
+
+.bold{font-weight:600}
+.hide{display:none}
+    </style>
+</head>
+
+<body>
+
+<div id="background-slideshow">
+    <!--canvas id="wave-canvas"></canvas-->
+    <div class="main-content">
+        <div id="main-content-container" class="container">
+
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-avatar">
+                    <img src="static/img/avatar.jpg" class="avatar" />
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <div id="main-info-container">
+                        <div class="col-name">
+                            <h1 class="name"><span>Yun Chang</span></h1>
+                            <p class="email">Email: yunchang [at] mit [dot] edu</p>
+                            <p>
+                            <a href="data/yunchang_cv.pdf">CV</a> / <a href="https://scholar.google.com/citations?user=IHKUFhcAAAAJ&hl=en">Google Scholar</a> / <a href="https://github.com/yunzc">GitHub</a> 
+                            </p>
+                            <p class="text">Hello there, welcome to my page. I am currently a PhD candidate at <a href="https://lids.mit.edu/" target="_blank">MIT LIDS</a> and <a href="https://aeroastro.mit.edu/" target="_blank">MIT AeroAstro</a>, advised by Prof. <a href="https://lucacarlone.mit.edu/", target="_blank"> Luca Carlone</a>. Scroll down for more!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span>&#x2193;</span> <!-- Unicode for downwards arrow -->
+        </div>
+    </div>
+</div>
+
+<div class="main-content">
+    <div class="content-container">
+        <div class="main-news-container">
+            <h5 class="subtitle">About</h5>
+            <p>
+            My research is to help robots see.
+            </p>
+
+            <p>
+            I am a PhD candidate at MIT LIDS. I am currently working as a research assistant at SPARK Lab, advised by Professor Luca Carlone.
+
+            My research is in the area robot perception, and I am interested in improving localization and scene understanding capabilities for robots in the real world in terms of scalability to multiple platforms and large scenes and robustness to measurement error and challenging scene conditions.
+            </p>
+            
+            <p>
+            I have published papers on multi-robot simultaneous localization and mapping (SLAM), semantic scene understanding, and robotics systems. I have also contributed to various LiDAR and vision-based SLAM pipelines. Please checkout my publications to learn more!
+            </p>
+            <h5 class="subtitle">News</h5>
+            <ul class="news-list">
+                <li>2024-09-20: Clio featured by <a href="https://news.mit.edu/2024/helping-robots-focus-on-objects-that-matter-0930" target="_blank">MIT News</a></li>
+                <li>2024-07-19: Khronos won <a href="https://aeroastro.mit.edu/news-impact/khronos-4d-spatio-temporal-perception-for-autonomous-robots/" target="_blank">Best System Paper</a> at RSS 2024</li>
+                <li>2024-06-03: Started internship at the <a href="https://theaiinstitute.com/" target="_blank">Boston Dynamics AI Institute</a> in Summer 2024</li>
+                <li>2023-06-02: Kimera-Multi won the 2023 <a href="https://spectrum.ieee.org/multi-robot-slam-icra2023">King-Sun Fu Memorial Best Paper Award</a> from IEEE Transactions on Robotics </li>
+                <li>2021-09-21: Participating in the <a href="https://www.darpa.mil/research/challenges/subterranean">Final Event of the DARPA Subterranean Challenge</a></li>
+                <li>2020-02-27: <a href="https://costar.jpl.nasa.gov/">Team CoSTAR</a> won first place at the <a href="https://youtu.be/TqL-vUyHMiU?si=Nosnj3ohemCA3dO3">DARPA Subterranean Challenge Urban Circuit</a></li>
+                <li>2019-08-22: Won second place at the DARPA Subterranean Challenge Tunnel Circuit alongside <a href="https://costar.jpl.nasa.gov/">Team CoSTAR</a></li>
+            </ul>
+        </div>
+        <div id="publications">
+            <h5 class="subtitle">Publications</h5>
+     			<div id="pub-entry-container" class="activated hide">
+	           	<script>
+        			const publicationsFolder = 'publications/';
+					
+					// Function to fetch the list of YAML files from the server
+    				async function fetchYAMLFiles() {
+        				const response = await fetch("publications.json");
+                        if (!response.ok) {                                                                                          
+                            throw new Error(`Failed to load publication list: ${response.statusText}`);    
+                        }
+        				return response.json();
+    				}
+
+    				// Function to fetch and parse a single YAML file
+    				async function fetchYAML(filePath) {
+        				console.log(`Fetching: ${filePath}`);
+        				const response = await fetch(filePath);
+        				if (!response.ok) {
+            				throw new Error(`HTTP error! status: ${response.status} (${response.statusText})`);
+        				}
+        				const text = await response.text();
+        				const data = jsyaml.load(text);
+        				return data;
+    				}
+
+    				// Function to display the publications
+    				async function displayPublications() {
+            			const yamlFiles = await fetchYAMLFiles(); // Get YAML files from the server
+            			const publicationPromises = yamlFiles.map(file => fetchYAML(publicationsFolder + file));
+            			let publications = await Promise.all(publicationPromises);
+
+            			// Flatten the publications array if YAML contains multiple entries per file
+            			publications = publications.flat();
+
+            			// Sort by date assuming the property is `date`
+            			publications.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+            			// Render publications
+            			const container = document.getElementById('pub-entry-container');
+            			container.innerHTML = ''; // Clear loading text
+
+            			publications.forEach(pub => {
+                			const pubDiv = document.createElement('div');
+                			pubDiv.className = 'pub-entry';
+                            pubDiv.innerHTML = `
+								<div class="row">
+									<div class="col-l col-xs-12 col-lg-3">
+										<img src="data/images/${pub.figure}" width="100%" height="auto"/>
+									</div>
+									<div class="col-r col-xs-12 col-lg-9">
+										<div class="pub-entry-body">
+											<h5 class="title">${pub.title}</h5>
+											<p class="authors">${pub.authors}</p>
+                                            <p class="venue">${pub.venue}</p>
+                                            <p class="award">${pub.best || ''}</p>
+                                            <p class="info">
+                                                <a target="_blank" href="${pub.paper}">Paper</a>
+                                                ${pub.code ? ` / <a target="_blank" href="${pub.code}">Code</a>` : ''}
+                                            </p>
+										</div>
+									</div>
+								</div>
+                    		`; 
+                			container.appendChild(pubDiv);
+            			});
+    				}
+        			displayPublications().catch(error => {
+            			document.getElementById('publications-list').innerText = 'Error loading publications.';
+            			console.error(error);
+        			});
+    			</script>
+				</div> 
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="copyright">
+                &copy; 2024 Yun Chang<br />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script type="text/javascript" src="static/js/jquery.color.min.js"></script>
+<script type="text/javascript">
+
+$.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+var allPublications = null;
+
+$(function() {
+    getRealSize = function(bgImg) {
+        var img = new Image();
+        img.src = bgImg.attr("src");
+        var width = img.width,
+            height = img.height;
+        return {
+            width: width,
+            height: height
+        }
+    };
+
+    getRealWindowSize = function() {
+        var winWidth = null,
+            winHeight = null;
+        if (window.innerWidth) winWidth = window.innerWidth;
+        else if ((document.body) && (document.body.clientWidth)) winWidth = document.body.clientWidth;
+        if (window.innerHeight) winHeight = window.innerHeight;
+        else if ((document.body) && (document.body.clientHeight)) winHeight = document.body.clientHeight;
+        if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth) {
+            winHeight = document.documentElement.clientHeight;
+            winWidth = document.documentElement.clientWidth
+        }
+        return {
+            width: winWidth,
+            height: winHeight
+        }
+    };
+
+    fullBg = function() {
+        var bgImg = $("#background");
+        var mainContainer = $("#main");
+        var firstFire = null;
+
+        if (bgImg.length == 0) {
+            return ;
+        }
+
+        function resizeImg() {
+            var realSize = getRealSize(bgImg);
+            var imgWidth = realSize.width;
+            var imgHeight = realSize.height;
+
+            if (imgWidth == 0 || imgHeight == 0) {
+                setTimeout(function() {
+                    resizeImg();
+                }, 200);
+            }
+
+            console.log(realSize);
+            var realWinSize = getRealWindowSize();
+            var winWidth = realWinSize.width;
+            var winHeight = realWinSize.height;
+            var widthRatio = winWidth / imgWidth;
+            var heightRatio = winHeight / imgHeight;
+            console.log(realWinSize);
+            if (widthRatio > heightRatio) {
+                bgImg.width(imgWidth * widthRatio + 'px').height(imgHeight * widthRatio + 'px').css({'top':
+                    -(imgHeight * widthRatio - winHeight) / 10 * 5 + 'px', 'left': '0'})
+            } else {
+                bgImg.width(imgWidth * heightRatio + 'px').height(imgHeight * heightRatio + 'px').css({'left':
+                    -(imgWidth * heightRatio - winWidth) / 10 * 3 + 'px', 'top': '0'})
+            }
+            // mainContainer.css({
+            //     width: winWidth,
+            //     height: winHeight
+            // });
+        }
+
+        resizeImg();
+        window.onresize = function() {
+            if (firstFire === null) {
+                firstFire = setTimeout(function() {
+                    resizeImg();
+                    firstFire = null
+                }, 100)
+            }
+        }
+    };
+
+    targetColor = $("#main-content-container .name").css("color");
+    animatedLink = function(speed) {
+        $("#main-content-container .col-link li").hover(function() {
+            $(this).find('.icon').animate({
+                color: targetColor,
+                borderColor: targetColor
+            }, speed);
+            $(this).find('.caption').animate({
+                color: targetColor
+            })
+        }, function() {
+            $(this).find('.icon').animate({
+                borderColor: '#cccccc',
+                color: '#cccccc'
+            }, speed);
+            $(this).find('.caption').animate({
+                color: '#cccccc'
+            })
+        })
+    };
+
+    // fullBg();
+    // animatedLink(400);
+
+    allPublications = $("#pub-entry-container .pub-entry");
+    allTopicsLink = $("#publications .subtitle-aux a");
+    allTopics = [];
+    for (var topicId = 0; topicId < allTopicsLink.length; topicId++) {
+        allTopics.push({name: $(allTopicsLink[topicId]).data("topic"), title: $(allTopicsLink[topicId]).html()});
+    }
+
+    $("#publication-by-selected").click();
+    // $("#publication-by-date").click();
+    $("#pub-entry-container").removeClass("hide");
+});
+</script>
+
+</body>
+</html>

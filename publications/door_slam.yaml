@@ -1,0 +1,7 @@
+- title: "DOOR-SLAM: Distributed, Online, and Outlier Resilient SLAM for Robotic Teams"
+  date: "2019-12-05"
+  authors: "Pierre-Yves Lajoie, Benjamin Ramtoula, Yun Chang, Luca Carlone, Giovanni Beltrame"
+  venue: IEEE Robotics and Automation Letters
+  figure: door_slam.png
+  paper: https://arxiv.org/pdf/1909.12198
+  code: https://github.com/MISTLab/DOOR-SLAM

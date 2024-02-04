@@ -1,0 +1,8 @@
+- title: "Kimera-multi: Robust, distributed, dense metric-semantic slam for multi-robot systems"
+  date: "2022-01-20"
+  authors: "Yulun Tian*, Yun Chang*, Fernando Herrera Arias, Carlos Nieto-Granda, Jonathan P How, Luca Carlone"
+  venue: IEEE Transactions on Robotics
+  figure: kimera_multi_tro.png
+  paper: https://arxiv.org/pdf/2106.14386
+  best: King-Sun Fu Memorial Best Paper Award 
+  code: https://github.com/MIT-SPARK/Kimera-Multi

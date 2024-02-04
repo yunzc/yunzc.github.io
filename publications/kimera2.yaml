@@ -1,0 +1,7 @@
+- title: "Kimera2: Robust and accurate metric-semantic SLAM in the real world"
+  date: "2023-11-26"
+  authors: "Marcus Abate, Yun Chang, Nathan Hughes, Luca Carlone"
+  venue: International Symposium on Experimental Robotics
+  figure: kimera2.png
+  paper: https://arxiv.org/pdf/2401.06323
+  code: https://github.com/MIT-SPARK/Kimera

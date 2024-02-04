@@ -1,0 +1,8 @@
+- title: "Khronos: A unified approach for spatio-temporal metric-semantic slam in dynamic environments"
+  date: "2024-02-21"
+  authors: "Lukas Schmid, Marcus Abate, Yun Chang, Luca Carlone"
+  venue: 2024 Robotics Science and Systems
+  figure: khronos.png
+  paper: https://arxiv.org/pdf/2402.13817
+  code: https://github.com/MIT-SPARK/Khronos
+  best: Best System Paper Award

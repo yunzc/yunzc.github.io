@@ -1,0 +1,6 @@
+- title: "LAMP: Large-Scale Autonomous Mapping and Positioning for Exploration of Perceptually-Degraded Subterranean Environment"
+  date: "2020-03-05"
+  authors: "Kamak Ebadi*, Yun Chang*, Matteo Palieri, Alex Stephens, Alex Hatteland, Eric Heiden, Abhishek Thakur, Nobuhiro Funabiki, Benjamin Morrell, Sally Wood, Luca Carlone, Ali-akbar Agha-mohammadi"
+  venue: 2020 IEEE International Conference on Robotics and Automation
+  figure: lamp.png
+  paper: https://arxiv.org/pdf/2003.01744

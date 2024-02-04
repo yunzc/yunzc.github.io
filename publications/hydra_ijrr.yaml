@@ -1,0 +1,7 @@
+- title: "Foundations of spatial perception for robotics: Hierarchical representations and real-time systems"
+  date: "2024-02-12"
+  authors: "Nathan Hughes, Yun Chang, Siyi Hu, Rajat Talak, Rumaia Abdulhai, Jared Strader, Luca Carlone"
+  venue: The International Journal of Robotics Research
+  figure: hydra_ijrr.png
+  paper: https://arxiv.org/pdf/2305.07154
+  code: https://github.com/MIT-SPARK/Hydra

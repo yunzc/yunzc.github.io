@@ -1,0 +1,7 @@
+- title: "LAMP 2.0: A robust multi-robot SLAM system for operation in challenging large-scale underground environments"
+  date: "2022-07-15"
+  authors: "Yun Chang, Kamak Ebadi, Christopher E Denniston, Muhammad Fadhil Ginting, Antoni Rosinol, Andrzej Reinke, Matteo Palieri, Jingnan Shi, Arghya Chatterjee, Benjamin Morrell, Ali-akbar Agha-mohammadi, Luca Carlone"
+  venue: IEEE Robotics and Automation Letters
+  figure: lamp2.png
+  paper: https://arxiv.org/pdf/2205.13135
+  code: https://github.com/NeBula-Autonomy/LAMP

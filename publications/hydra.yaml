@@ -1,0 +1,7 @@
+- title: "Hydra: A real-time spatial perception system for 3D scene graph construction and optimization"
+  date: "2022-01-31"
+  authors: "Nathan Hughes, Yun Chang, Luca Carlone"
+  venue: 2022 Robotics Science and Systems
+  figure: hydra.png
+  paper: https://arxiv.org/pdf/2201.13360
+  code: https://github.com/MIT-SPARK/Hydra

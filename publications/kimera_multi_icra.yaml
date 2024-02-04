@@ -1,0 +1,7 @@
+- title: "Kimera-multi: a system for distributed multi-robot metric-semantic simultaneous localization and mapping"
+  date: "2021-05-30"
+  authors: "Yun Chang*, Yulun Tian*, Jonathan P How, Luca Carlone"
+  venue: 2021 IEEE International Conference on Robotics and Automation
+  figure: kimera_multi_icra.png
+  paper: https://arxiv.org/pdf/2011.04087
+  code: https://github.com/MIT-SPARK/Kimera-Multi
