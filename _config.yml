@@ -241,7 +241,7 @@ whitelist:
 
 # Collections
 collections:
-  portfolio:
+  projects:
     output: true
     permalink: /:collection/:path/
 
@@ -253,6 +253,7 @@ scholar:
   order: descending
   source: /_publications/
   bibliography: papers.bib
+  bibliography_template: bib
   replace_strings: true
   join_strings: false
   query: "@*"
