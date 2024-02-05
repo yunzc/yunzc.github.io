@@ -1,24 +1,23 @@
 .bibliography {
   button,input{
-    border: none;
-    color: white;
+    border: 4;
     padding: 4px 8px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: bold;
     margin: 2px 1px;
     cursor: pointer;
-    border-radius: 5px;
-  }
-  .bibtex{
-    background-color: #001871;
+    border-radius: 3px;
   }
   .pdf{
-    background-color:#8bc24c;
+    color:#0c0958;
   }
   .code{
-    background-color: #3b9a9c;
+    color: #3b9a9c;
+  }
+  .bestpaper{
+    color: #1cd119;
   }
 }

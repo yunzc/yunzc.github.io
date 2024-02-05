@@ -10,6 +10,11 @@
 {% if entry.code %}
     <a href="{{ entry.code | absolute_url }}"><input class="code" type="button" value="code" /></a>
 {% endif %}
+
+{% if entry.bestpaper %}
+    <a href="{{ entry.bestpaper | absolute_url }}"><input class="bestpaper" type="button" value="best paper award" /></a>
+{% endif %}
+
 <div id="{{entry.key}}-bib" style="display: none;">
   <pre>{{entry.bibtex}}</pre>
 </div>
