@@ -11,8 +11,11 @@ redirect_from:
 
 Education
 ======
-* B.S. in Aerospace Engineering, MIT, 2019. GPA: 5.0 / 5.0
+* B.S. in Aerospace Engineering, MIT, 2019
+  * Minor in Music
+  * GPA: 5.0 / 5.0
 * M.S. in Aeronautics and Astronautics, MIT, 2021. GPA: 5.0 / 5.0
+  * GPA: 5.0 / 5.0
 * Ph.D in Autonomy, MIT, 2025 (expected)
 
 Work experience
