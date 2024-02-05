@@ -17,6 +17,6 @@ in terms of scalability to multiple platforms and large scenes and robustness to
 
 I have published papers on multi-robot simultaneous localization and mapping (SLAM), semantic scene understanding, and robotics systems.
 I have also contributed to various LiDAR and vision-based SLAM pipelines.
-Please checkout my [publications](http://localhost:4000/publications/) and [projects](http://localhost:4000/projects/) to learn more!
+Please checkout my [publications](https://yunzc.github.io/publications/) and [projects](https://yunzc.github.io/projects/) to learn more!
 
 You can contact me at yunchang(at)mit(dot)edu.
