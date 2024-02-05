@@ -3,7 +3,7 @@ layout: single
 title: "LAMP"
 excerpt: "Robust multi-robot Lidar-base SLAM System designed for Team CoSTAR for the DARPA Subterranean Challenge<br/><img src='/images/projects/lamp.png'>"
 collection: SLAM
-date: 2022-06-30
+last_updated: 2022-06-30
 ---
 
 LAMP (Large-Scale Autonomous Mapping and Positioning for Exploration of Perceptually-Degraded Subterranean Environments)
@@ -16,5 +16,9 @@ We open sourced the code along with raw and processed multi-robot datasets from 
 Please check out our [repo](https://github.com/NeBula-Autonomy/LAMP).
 
 The initial version of the system is described in {% cite Ebadi20icra-LAMP %} and the final system is detailed in {% cite Chang22ral-LAMP2 %}.
+
+<p align="center">
+  <img src="/images/projects/lamp.png" />
+</p>
 
 {% bibliography --cited %}
