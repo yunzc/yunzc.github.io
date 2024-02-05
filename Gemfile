@@ -29,6 +29,6 @@ group :jekyll_plugins do
 end
 
 # Jekyll SEO tags plugins
-gem 'jekyll-seo-tag'
+# gem 'jekyll-seo-tag'
 #gem 'amp-jekyll'
 # gem 'jekyll-paginate'
