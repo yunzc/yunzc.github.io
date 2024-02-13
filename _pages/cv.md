@@ -22,7 +22,7 @@ Education
 * Ph.D in Autonomy, MIT, 2025 (expected)
   * Advisor: Luca Carlone
 
-Experience & Projects
+Work Experience
 ======
 * 2019 - 2021: Perception Team
   * Team CoSTAR (NASA JPL / MIT / Caltech, KAIST, LTU collaborative)
