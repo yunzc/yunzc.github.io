@@ -26,7 +26,7 @@ Work Experience
 ======
 * 2019 - 2021: Perception Team
   * Team CoSTAR (NASA JPL / MIT / Caltech, KAIST, LTU collaborative)
-  * Project: Built and maintained a lidar-based multi-robot simultaneous localization and mapping (SLAM) system for team CoSTAR as part of the system supporting a team of heterogeneous robots competing in the DARPA Subterranean Challenge: a competition where a team of robots have to autonomously find and localize objects in a GPS denied underground environment. [website](https://costar.jpl.nasa.gov/) [github](https://github.com/NeBula-Autonomy/LAMP)
+  * Project: Built and maintained a lidar-based multi-robot simultaneous localization and mapping (SLAM) system for team CoSTAR as part of the system supporting a team of heterogeneous robots competing in the DARPA Subterranean Challenge: a competition where a team of robots have to autonomously find and localize objects in a GPS denied underground environment.
 
 * 2016 - 2019: Undergraduate Researcher
   * Model-based Embedded and Robotic Systems Group
@@ -55,10 +55,10 @@ Teaching
 Awards & Honors
 ======
 * 2023: The MIT Prize for Open Data
-  * Honorable Mention: [Kimera-Multi Dataset](https://libraries.mit.edu/opendata/open-data-mit-home/mit-prize/).
+  * Honorable Mention: Kimera-Multi Dataset.
 
 * 2023: IEEE Transactions on Robotics King-Sun Fu Memorial Best Paper Award
-  * ["Kimera-Multi: Robust, Distributed, Dense Metric-Semantic SLAM for Multi-Robot Systems" vol. 38, no. 4, pp. 2022-2038, August 2022"](https://spectrum.ieee.org/multi-robot-slam-icra2023)
+  * "Kimera-Multi: Robust, Distributed, Dense Metric-Semantic SLAM for Multi-Robot Systems" vol. 38, no. 4, pp. 2022-2038, August 2022".
 
 * The Henry Webb Salisbury Award for Superior Academic Performance
   * Awarded by the MIT Department of Aeronautics and Astronautics for superior and multiple-dimensional academic achievements in the undergraduate program.
