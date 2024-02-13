@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "LAMP"
-excerpt: "Robust multi-robot Lidar-base SLAM System designed for Team CoSTAR for the DARPA Subterranean Challenge<br/><img src='/images/projects/lamp.png'>"
+blob: "Robust multi-robot Lidar-base SLAM System designed for Team CoSTAR for the DARPA Subterranean Challenge<br/><img src='/images/projects/lamp.png'>"
 collection: SLAM
 last_updated: 2022-06-30
 ---

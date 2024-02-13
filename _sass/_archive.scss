@@ -57,7 +57,7 @@
   }
 }
 
-.archive__item-excerpt {
+.archive__item-blob {
   margin-top: 0;
   font-size: $type-size-6;
 
@@ -124,7 +124,7 @@
     font-size: $type-size-5;
   }
 
-  .archive__item-excerpt {
+  .archive__item-blob {
     display: none;
   }
 
@@ -144,7 +144,7 @@
       max-height: 120px;
     }
 
-    .archive__item-excerpt {
+    .archive__item-blob {
       display: block;
       font-size: $type-size-6;
     }

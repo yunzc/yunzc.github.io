@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Hydra"
-excerpt: "Incrementally build 3D Dynamic Scene Graphs (DSGs) in real-time<br/><img src='/images/projects/hydra.gif'>"
+blob: "Incrementally build 3D Dynamic Scene Graphs (DSGs) in real-time<br/><img src='/images/projects/hydra.gif'>"
 collection: SLAM
 last_updated: 2023-12-12
 ---

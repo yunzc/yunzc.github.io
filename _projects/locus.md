@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "LOCUS"
-excerpt: "Robust Lidar Odometry System designed for Team CoSTAR for the DARPA Subterranean Challenge<br/><img src='/images/projects/locus.png'>"
+blob: "Robust Lidar Odometry System designed for Team CoSTAR for the DARPA Subterranean Challenge<br/><img src='/images/projects/locus.png'>"
 collection: SLAM
 last_updated: 2022-06-30
 ---

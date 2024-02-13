@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Kimera-Multi"
-excerpt: "A System for Distributed Multi-Robot Metric-Semantic Simultaneous Localization and Mapping<br/><img src='/images/projects/kimera_multi.png'>"
+blob: "A System for Distributed Multi-Robot Metric-Semantic Simultaneous Localization and Mapping<br/><img src='/images/projects/kimera_multi.png'>"
 collection: SLAM
 last_updated: 2023-03-01
 ---
