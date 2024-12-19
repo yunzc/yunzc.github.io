@@ -100,17 +100,17 @@ a:hover{color:var(--link-color-hover);cursor:pointer}
 @media (min-width: 768px) { .profile-pendant {display:block} }
 @media (max-width: 767px) { .profile-pendant {display:none} }
 
-.main-content{position:relative;z-index:3;padding:20px;text-align:center;cursor:default;text-align:center;background-color:var(--background-color);opacity: 0.9;top: 10%;
+.main-content{position:relative;z-index:3;padding:20px;text-align:center;cursor:default;text-align:center;background-color:var(--background-color);opacity: 0.9;top: 10%;width: auto;min-width: 0;max-width: none;overflow-x: hidden;
 }
 
 /*.main-content{background:rgba(238,238,238,0.95);padding:0;text-align:center;cursor:default;text-align:center;}*/
 /*.main-content{margin-left:6.5104167%;width:86.9791667%;}*/
-@media (min-width: 768px) {.main-content{width:66%;min-width:668px;margin:auto;}}
+@media (min-width: 768px) {.main-content{width:40%;min-width:320px;margin:auto;}}
 @media (min-width: 1200px) {.main-content{width:66%;max-width:1080px;margin:auto;}}
 
 /* Avatar, Name, etc. */
 #main-content-container{margin-top:0 auto;padding:15px 0 0;max-width:1080px;}
-@media (min-width: 768px) { #main-content-container{padding:15px 0 0;} }
+@media (min-width: 768px) { #main-content-container{padding:0 0 0;} }
 #main-content-container .col-avatar{text-align:center;min-width:330px;}
 @media (min-width: 768px) { #main-content-container .col-avatar{text-align:center} }
 #main-content-container .col-avatar .avatar{z-index:100;width:200px;height:200px;border-radius:100%;box-shadow:0 0 0 0.1em #eee;opacity:1;}
@@ -118,7 +118,7 @@ a:hover{color:var(--link-color-hover);cursor:pointer}
 
 #main-content-container .col-info{height:100%;align-items:center;}
 #main-info-container{padding-top:15px;}
-#main-info-container .col-name{text-align:center;margin-top:30px;}
+#main-info-container .col-name{text-align:left;margin-top:30px;}
 @media (min-width: 768px) { #main-info-container .col-name{text-align:left;margin-top:0;}
 }
 #main-info-container .col-name .text{text-align:left;margin-top:0.5rem}
