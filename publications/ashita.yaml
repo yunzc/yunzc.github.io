@@ -1,0 +1,6 @@
+- title: "ASHiTA: Automatic Scene-grounded HIerarchical Task Analysis"
+  date: "2025-04-09"
+  authors: "Yun Chang, Leonor Fermoselle, Duy Ta, Bernadette Bucher, Luca Carlone, Jiuguang Wang"
+  venue:  IEEE/CVF Conference on Computer Vision and Pattern Recognition
+  figure: ashita.png
+  paper: https://arxiv.org/pdf/2504.06553
